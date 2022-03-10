@@ -1,5 +1,5 @@
 {
-  "name": "dispex",
+  "name": "John app",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",

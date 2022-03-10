@@ -1,4 +1,6 @@
 node_modules/
+markup/
+.vscode/
 
 public/bundle.js
 public/bundle.js.map
