@@ -1,23 +1,13 @@
 import React from 'react';
+import Footer from '../footer/footer';
+import Header from '../header/header';
+import MainContainer from '../main-container/main-container';
 
 const MainPage = () => {
   return (
   <React.Fragment>
-    <div className="wrapper _loaded">
-      <header className="header">
-        <div className="header__content">
-          <div className="header__menu menu">
-            <div className="menu__icon icon-menu"><span></span> <span></span> <span></span></div>
-            <nav className="menu__body _active">
-              <ul className="menu__list">
-                <li><a href="" className="menu__link">Works</a></li>
-                <li><a href="" className="menu__link">Blog</a></li>
-                <li><a href="" className="menu__link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <MainContainer>
+      <Header/>
       <main className="page">
         <section className="hello">
           <div className="hello__container _container">
@@ -29,7 +19,7 @@ const MainPage = () => {
             </div>
             <div className="hello__avatar">
               <picture>
-                <source srcset="./img/avatar.png" type="image/webp"/>
+                <source srcSet="./img/avatar.png" type="image/webp"/>
                 <img alt="John's avatar"/>
               </picture>
             </div>
@@ -67,7 +57,7 @@ const MainPage = () => {
             <div className="featured-works__items works">
               <article className="works__item"><a href="" className="works__image _ibg">
                   <picture>
-                    <source srcset="./img/Dashboard.jpg" type="image/webp"/>
+                    <source srcSet="./img/Dashboard.jpg" type="image/webp"/>
                     <img alt="Work #1"/>
                   </picture>
                 </a>
@@ -84,7 +74,7 @@ const MainPage = () => {
               <article className="works__item">
                 <a href="" className="works__image _ibg">
                   <picture>
-                    <source srcset="./img/Illustration.jpg" type="image/webp"/>
+                    <source srcSet="./img/Illustration.jpg" type="image/webp"/>
                     <img alt="Work #1"/>
                   </picture>
                 </a>
@@ -101,7 +91,7 @@ const MainPage = () => {
               <article className="works__item">
                 <a href="" className="works__image _ibg">
                   <picture>
-                    <source srcset="./img/Typography.jpg" type="image/webp"/>
+                    <source srcSet="./img/Typography.jpg" type="image/webp"/>
                     <img alt="Work #1"/>
                   </picture>
                 </a>
@@ -119,15 +109,8 @@ const MainPage = () => {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="footer__content __container">
-          <div className="footer__social social"><a href="" className="social__item _icon-fb"></a> <a href=""
-              className="social__item _icon-insta"></a> <a href="" className="social__item _icon-twitter"></a> <a href=""
-              className="social__item _icon-linkedin"></a></div>
-          <div className="footer__copy">Copyright ©2020 All rights reserved</div>
-        </div>
-      </footer>
-    </div>
+      <Footer/>
+    </MainContainer>
   </React.Fragment>
   );
 };
