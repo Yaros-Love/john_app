@@ -1,4 +1,6 @@
 import React from 'react';
+import { navItems } from '../../const/const';
+import NavItem from './nav-item';
 
 const Header = () => {
   return (
@@ -9,9 +11,7 @@ const Header = () => {
             <div className="menu__icon icon-menu"><span></span> <span></span> <span></span></div>
             <nav className="menu__body _active">
               <ul className="menu__list">
-                <li><a href="" className="menu__link">Works</a></li>
-                <li><a href="" className="menu__link">Blog</a></li>
-                <li><a href="" className="menu__link _active">Profile</a></li>
+                {navItems.map(item => <NavItem navItem={item} key={item.title}/>)}
               </ul>
             </nav>
           </div>
