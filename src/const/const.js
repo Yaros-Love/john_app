@@ -8,7 +8,7 @@ export const AppRoute = {
 export const navItems = [
   {
     title: `Works`,
-    webkitURL: AppRoute.WORKS
+    url: AppRoute.WORKS
   },
   {
     title: `Blog`,
