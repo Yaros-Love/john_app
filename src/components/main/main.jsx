@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import MainContainer from '../main-container/main-container';
-import ResentPostsList from './resent-posts-list';
+import RecentPosts from '../recent-posts/recent-posts';
 
 const MainPage = () => {
   return (
@@ -26,15 +26,7 @@ const MainPage = () => {
             </div>
           </div>
         </section>
-        <section className="recent-posts">
-          <div className="recent-posts__container _container">
-            <div className="recent-posts__header">
-              <div className="recent-posts__title title title-posts">Recent posts</div>
-              <a href="" className="recent-posts__view-all">View all</a>
-            </div>
-            <ResentPostsList/>
-          </div>
-        </section>
+        <RecentPosts/>
         <section className="featured-works">
           <div className="featured-works__container _container">
             <div className="featured-works__title title-posts">Featured works</div>

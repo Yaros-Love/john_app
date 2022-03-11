@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResentPosts } from '../../mocks/mocks';
-import ResentPost from './resent-post';
+import ResentPost from './recent-post';
 
 const ResentPostsList = () => {
   return (
