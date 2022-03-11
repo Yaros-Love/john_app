@@ -6,7 +6,7 @@ const WorkItem = ({work}) => {
       <article className="works__item">
         <a href="" className="works__image _ibg">
           <picture>
-            <source srcset={work.img} type="image/webp"/>
+            <source srcSet={work.img} type="image/webp"/>
             <img alt="Work #1"/>
           </picture>
         </a>

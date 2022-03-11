@@ -1,8 +1,10 @@
 import React from 'react';
+import { Works } from '../../mocks/mocks';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import MainContainer from '../main-container/main-container';
 import RecentPosts from '../recent-posts/recent-posts';
+import WorkItem from '../works/work-item';
 
 const MainPage = () => {
   return (
@@ -31,56 +33,7 @@ const MainPage = () => {
           <div className="featured-works__container _container">
             <div className="featured-works__title title-posts">Featured works</div>
             <div className="featured-works__items works">
-              <article className="works__item"><a href="" className="works__image _ibg">
-                  <picture>
-                    <source srcSet="./img/Dashboard.jpg" type="image/webp"/>
-                    <img alt="Work #1"/>
-                  </picture>
-                </a>
-                <div className="works__body">
-                  <a href="" className="works__title">Designing Dashboard</a>
-                  <div className="works__info">
-                    <div className="works__year">2020</div>
-                    <div className="works__category">Dashboard</div>
-                  </div>
-                  <div className="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-                </div>
-              </article>
-              <article className="works__item">
-                <a href="" className="works__image _ibg">
-                  <picture>
-                    <source srcSet="./img/Illustration.jpg" type="image/webp"/>
-                    <img alt="Work #1"/>
-                  </picture>
-                </a>
-                <div className="works__body">
-                  <a href="" className="works__title">Vibrant Portraits of 2020</a>
-                  <div className="works__info">
-                    <div className="works__year">2018</div>
-                    <div className="works__category">Illustration</div>
-                  </div>
-                  <div className="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-                </div>
-              </article>
-              <article className="works__item">
-                <a href="" className="works__image _ibg">
-                  <picture>
-                    <source srcSet="./img/Typography.jpg" type="image/webp"/>
-                    <img alt="Work #1"/>
-                  </picture>
-                </a>
-                <div className="works__body">
-                  <a href="" className="works__title">36 Days of Malayalam type</a>
-                  <div className="works__info">
-                    <div className="works__year">2018</div>
-                    <div className="works__category">Typography</div>
-                  </div>
-                  <div className="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
-                </div>
-              </article>
+              {Works.slice(0, 3).map(item => <WorkItem work={item} key={item.title + item.img}/>)}
             </div>
           </div>
         </section>
