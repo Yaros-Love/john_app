@@ -19,7 +19,7 @@ const MainPage = () => {
               <h1 className="hello__title title">Hi, I am John,<br/>Creative Technologist</h1>
               <div className="hello__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                 Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div><a
-                href="" className="hello__btn btn">Download Resume</a>
+                href="./Resume.txt" download={true} className="hello__btn btn">Download Resume</a>
             </div>
             <div className="hello__avatar">
               <picture>
