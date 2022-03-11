@@ -1,5 +1,6 @@
 import React from 'react';
 import { Works } from '../../mocks/mocks';
+import FeaturedWorks from '../featured-works/featured-works';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import MainContainer from '../main-container/main-container';
@@ -29,14 +30,7 @@ const MainPage = () => {
           </div>
         </section>
         <RecentPosts/>
-        <section className="featured-works">
-          <div className="featured-works__container _container">
-            <div className="featured-works__title title-posts">Featured works</div>
-            <div className="featured-works__items works">
-              {Works.slice(0, 3).map(item => <WorkItem work={item} key={item.title + item.img}/>)}
-            </div>
-          </div>
-        </section>
+        <FeaturedWorks/>
       </main>
       <Footer/>
     </MainContainer>
