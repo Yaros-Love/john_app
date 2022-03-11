@@ -19,17 +19,17 @@ const ArticlesPage = () => {
               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
                 velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
               <picture className="article__image">
-                <source srcset="./img/article1.jpg" type="image/webp"/>
+                <source srcSet="./img/article1.jpg" type="image/webp"/>
                 <img alt="Dashboard"/>
               </picture>
               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
                 velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
               <picture className="article__image">
-                <source srcset="./img/article2.jpg" type="image/webp"/>
+                <source srcSet="./img/article2.jpg" type="image/webp"/>
                 <img alt="Dashboard"/>
               </picture>
               <picture className="article__image">
-                <source srcset="./img/article3.jpg" type="image/webp"/>
+                <source srcSet="./img/article3.jpg" type="image/webp"/>
                 <img alt="Dashboard"/>
               </picture>
             </div>
