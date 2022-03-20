@@ -1,10 +1,10 @@
 export const ActionType = {
-  ACTION: `action/action`,
+  SET_CURRENY_PAGE: `page/setCurrentPage`,
 };
 
 export const ActionCreator = {
-  action: (data) => ({
-    type: ActionType.ACTION,
-    payload: data,
+  setCurrentPage: (page) => ({
+    type: ActionType.SET_CURRENY_PAGE,
+    payload: page,
   }),
 };

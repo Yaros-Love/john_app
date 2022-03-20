@@ -4,8 +4,7 @@ import NavItem from './nav-item';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [activePage, _] = useState(window.location.pathname);
-
+  
   return (
     <React.Fragment>
       <header className="header">
@@ -20,7 +19,7 @@ const Header = () => {
             </div>
             <nav className={isActive ? `menu__body _active` : `menu__body`}>
               <ul className="menu__list">
-                {navItems.map(item => <NavItem navItem={item} key={item.title} activePage={activePage}/>)}
+                {navItems.map(item => <NavItem navItem={item} key={item.title}/>)}
               </ul>
             </nav>
           </div>

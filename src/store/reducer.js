@@ -1,15 +1,15 @@
 import {ActionType} from '../store/actions';
 
 const initialState = {
-  data: [],
+  currentPage: `Profile`,
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case ActionType.ACTION:
+    case ActionType.SET_CURRENY_PAGE:
       return {
         ...state,
-        data: action.payload,
+        currentPage: action.payload,
       };
   };
   return state;
