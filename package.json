@@ -6,7 +6,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "@babel/core": "7.12.13",
