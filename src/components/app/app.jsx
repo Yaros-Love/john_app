@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route, Router as BrowserRouter} from 'react-router-dom';
+import {Switch, Route, HashRouter as BrowserRouter} from 'react-router-dom';
 import browserHistory from '../../browser-history';
 import { AppRoute } from '../../const/const';
 import ArticlesPage from '../article/article';
